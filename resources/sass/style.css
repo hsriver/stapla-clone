@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans JP", "Lato";
+  background-color: #FFFAF0;
+}
+
+/* header */
+.header-img {
+  width: 50px;
+  height: 50px;
+}
+
+/* logs */
+.logs-bg {
+  background-color: #fff;
+}
+
+.logs-container {
+  width: 850px;
+  margin: 0 auto;
+}
+
+.log__userIcon {
+  width: 45px;
+  height: 45px;
+}
+
+.log__materialInfo {
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.log__materialImg {
+  width: 25%;
+  height: 150px;
+  position: relative;
+}
+
+.log__materialImg > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  height: 100%;
+}
+
+.log__info {
+  width: 75%;
+}
+/*# sourceMappingURL=style.css.map */

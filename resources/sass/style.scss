@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Noto Sans JP", "Lato";
+    background-color: #fffaf0;
+    height: 100%;
+    color: #333;
+}
+
+.reset-link {
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+/* header */
+.header-img {
+    width: 50px;
+    height: 50px;
+}
+
+/* logs */
+.logs {
+    &-bg {
+        background-color: #fff;
+    }
+
+    &-container {
+        max-width: 750px;
+        margin: 0 auto;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+}
+
+.log {
+    &__userIcon {
+        width: 45px;
+        height: 45px;
+    }
+
+    &__materialInfo {
+        border: 1px solid #eee;
+        border-radius: 3px;
+    }
+
+    &__materialImg {
+        width: 25%;
+        height: 125px;
+        position: relative;
+        @media screen and (max-width: 576px) {
+            height: 100px;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            height: auto;
+            max-height: 125px;
+            @media screen and (max-width: 576px) {
+                max-height: 100px;
+            }
+        }
+    }
+
+    &__info {
+        width: 75%;
+    }
+
+    &__studyTime {
+        border-top: 1px solid #eee;
+    }
+
+    //ログ作成
+    // &-create {
+    //   &__container {
+
+    //   }
+    // }
+}
+
+//教材モダール
+
+.modal-dialog {
+    @media (min-width: 576px) {
+        max-width: 800px;
+    }
+}
+
+//新
+.material-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 5%;
+}
+
+.is-modal-active {
+    display: block;
+}
+
+.modal-block {
+    width: 700px;
+    background-color: #fff;
+}
+
+.modal-materials { 
+    width: 100%;
+}
+
+.modal-materials-cat {
+    padding: 30px 10px;
+}
+
+.materials-wrap {
+    display: flex;
+}
+
+.material-block {
+    width: 80px;
+    height: 120px;
+    margin: 5px;
+    overflow-y: scroll;
+}
+
+.modal-material__img {
+    width: 100%;
+    height: 100px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        max-height: 100px;
+    }
+}
+
+.log-create {
+    &-container {
+        padding-top: 40px;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__img {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #eee;
+        border-radius: 3px;
+        margin: 0 auto 20px;
+        @media screen and (min-width: 768px) {
+            width: 250px;
+            height: 250px;
+            margin: 0;
+            margin-right: 40px;
+        }
+        position: relative;
+        > img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            height: auto;
+            max-height: 200px;
+            @media screen and (min-width: 768px) {
+                max-height: 250px;
+            }
+        }
+    }
+
+    &__form {
+        max-width: 500px;
+        margin: 0 auto;
+        @media screen and (min-width: 768px) {
+            margin: 0;
+        }
+    }
+
+    &__item {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+}
+
+//教材作成 material/create
+.material-create__form {
+  width: 700px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+}
+}
